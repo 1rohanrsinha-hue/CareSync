@@ -1,62 +1,105 @@
 # CareSync
 
-CareSync is a full-stack healthcare web application that allows users to browse doctors, book appointments, and manage their bookings efficiently.
+CareSync is a full-stack healthcare web application that enables users to browse doctors, book appointments, and manage their healthcare interactions efficiently.
+
+This project demonstrates a complete MERN-style architecture with authentication, REST APIs, and a responsive frontend.
+
+---
 
 ## Features
 
-- User authentication (login/register)
-- Doctor listing
-- Appointment booking system
-- View user-specific appointments
-- Cancel appointments
+* User authentication (Register / Login)
+* Browse available doctors
+* Book appointments with doctors
+* View user-specific appointments
+* Cancel appointments
+* Full-stack integration (frontend + backend)
+
+---
 
 ## Tech Stack
 
-Frontend:
-- React.js
+### Frontend
 
-Backend:
-- Node.js
-- Express.js
+* React.js
+* CSS
 
-Database:
-- MongoDB
+### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* MongoDB
+
+---
 
 ## Project Structure
 
 CareSync/
-│── client/    # React frontend
-│── server/    # Node/Express backend
+│── backend/        # Node.js + Express backend (API, DB, routes)
+│── caresync/       # React frontend (main UI)
+│── src/            # Additional frontend files (root-level React)
+│── public/         # Static assets
+│── package.json
 │── README.md
 │── .gitignore
 
-## Installation
+Note: The project currently contains frontend code in both the root and the `caresync/` folder.
 
-1. Clone the repository:
-git clone https://github.com/your-username/CareSync.git
+---
 
-2. Install dependencies:
+## Installation and Setup
 
-Frontend:
-cd client
+### 1. Clone the repository
+
+git clone https://github.com/1rohanrsinha-hue/CareSync.git
+
+cd CareSync
+
+---
+
+### 2. Install dependencies
+
+#### Backend
+
+cd backend
 npm install
 
-Backend:
-cd server
+#### Frontend (caresync)
+
+cd ../caresync
 npm install
 
-3. Run the application:
+---
 
-Backend:
-cd server
+### 3. Run the application
+
+#### Start Backend
+
+cd backend
 npm start
 
-Frontend:
-cd client
+#### Start Frontend
+
+cd ../caresync
 npm start
+
+---
 
 ## Future Improvements
 
-- Payment integration
-- Doctor availability scheduling
-- Notifications
+* Payment gateway integration
+* Doctor availability scheduling system
+* Notifications and reminders
+* Improved UI/UX
+* Deployment (AWS / Vercel / Render)
+
+---
+
+## Author
+
+Rohan Sinha
+
+---
